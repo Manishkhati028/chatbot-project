@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def home():
-    #return "Welcome to the WhatsApp Bot!"
+    return "Welcome to the WhatsApp Bot!"
 
 # Define a route for the WhatsApp webhook
 @app.route("/whatsapp", methods=["POST"])
