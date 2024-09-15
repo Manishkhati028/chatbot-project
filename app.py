@@ -9,7 +9,7 @@ def home():
     #return "Welcome to the WhatsApp Bot!"
 
 # Define a route for the WhatsApp webhook
-@app.route("/whatsapp", methods=[POST"])
+@app.route("/whatsapp", methods=["POST"])
 def whatsapp_reply():
     # Get the message the user sent
     incoming_msg = request.values.get('Body', '').lower()
